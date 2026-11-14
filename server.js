@@ -29,6 +29,7 @@ const supabase = createClient(
 const allowedOrigins = [
     "http://localhost:5500",
     "http://127.0.0.1:5500",
+     "https://purpletaxi-website.onrender.com",
     ...(process.env.FRONTEND_ORIGIN
         ? process.env.FRONTEND_ORIGIN.split(",").map(s => s.trim())
         : [])
